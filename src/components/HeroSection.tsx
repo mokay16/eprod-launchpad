@@ -1,4 +1,4 @@
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import heroImage from "@/assets/hero-farmer.jpg";
 
 const HeroSection = () => {
