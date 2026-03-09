@@ -1,4 +1,4 @@
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import heroImage from "@/assets/hero-farmer.jpg";
 
 const HeroSection = () => {
@@ -8,11 +8,11 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-foreground">
-              Stop Managing Your Supply Chain in{" "}
-              <span className="gradient-primary-text">Spreadsheets.</span>
+              De-Risk Your Supply Chain.{" "}
+              <span className="gradient-primary-text">Unlock Your Capital.</span>
             </h1>
             <h2 className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              eProd helps agribusinesses manage 1,000+ farmers, ensure traceability, and reduce waste—all in one affordable platform.
+              eProd helps agribusinesses manage 1,000+ farmers, ensure traceability, de-risk lending for financial partners, and reduce waste—all in one affordable platform.
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
@@ -23,11 +23,12 @@ const HeroSection = () => {
                 <ArrowRight size={18} />
               </a>
               <a
-                href="#"
+                href="/eprod-supply-chain-guide.pdf"
+                download
                 className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-secondary bg-transparent px-8 py-3.5 text-base font-semibold text-primary hover:bg-secondary/10 transition"
               >
-                <Play size={18} className="text-secondary" />
-                Watch a 2-Minute Overview
+                <Download size={18} className="text-secondary" />
+                Download Free Guide
               </a>
             </div>
           </div>
