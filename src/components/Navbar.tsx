@@ -59,16 +59,19 @@ const Navbar = () => {
 
         {open && (
           <div className="md:hidden px-4 pb-4 space-y-2">
-            {navLinks.map((link) => (
-              <a
-                key={link}
-                href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
-                className="block text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground py-1"
-                onClick={() => setOpen(false)}
-              >
-                {link}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const href = link === "About Us" ? "/about" : `#${link.toLowerCase().replace(/\s+/g, "-")}`;
+              return (
+                <a
+                  key={link}
+                  href={href}
+                  className="block text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground py-1"
+                  onClick={() => setOpen(false)}
+                >
+                  {link}
+                </a>
+              );
+            })}
             <a
               href="#cta"
               className="inline-flex items-center gap-2 rounded-full bg-secondary px-5 py-2 text-sm font-semibold text-secondary-foreground mt-2"
