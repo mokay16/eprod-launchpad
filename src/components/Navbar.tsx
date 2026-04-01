@@ -30,16 +30,19 @@ const Navbar = () => {
       <nav className="gradient-primary">
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
           <ul className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <li key={link}>
-                <a
-                  href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
-                  className="text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                >
-                  {link}
-                </a>
-              </li>
-            ))}
+            {navLinks.map((link) => {
+              const href = link === "About Us" ? "/about" : `#${link.toLowerCase().replace(/\s+/g, "-")}`;
+              return (
+                <li key={link}>
+                  <a
+                    href={href}
+                    className="text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  >
+                    {link}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
 
           <a
