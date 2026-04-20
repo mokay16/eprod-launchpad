@@ -31,7 +31,12 @@ const Navbar = () => {
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
           <ul className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => {
-              const href = link === "About Us" ? "/about" : `#${link.toLowerCase().replace(/\s+/g, "-")}`;
+              const routeMap: Record<string, string> = {
+                "Home": "/",
+                "About Us": "/about",
+                "Solutions": "/solutions",
+              };
+              const href = routeMap[link] ?? `#${link.toLowerCase().replace(/\s+/g, "-")}`;
               return (
                 <li key={link}>
                   <a
@@ -60,7 +65,12 @@ const Navbar = () => {
         {open && (
           <div className="md:hidden px-4 pb-4 space-y-2">
             {navLinks.map((link) => {
-              const href = link === "About Us" ? "/about" : `#${link.toLowerCase().replace(/\s+/g, "-")}`;
+              const routeMap: Record<string, string> = {
+                "Home": "/",
+                "About Us": "/about",
+                "Solutions": "/solutions",
+              };
+              const href = routeMap[link] ?? `#${link.toLowerCase().replace(/\s+/g, "-")}`;
               return (
                 <a
                   key={link}
