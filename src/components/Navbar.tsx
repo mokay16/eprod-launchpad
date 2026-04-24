@@ -35,6 +35,7 @@ const Navbar = () => {
                 "Home": "/",
                 "About Us": "/about",
                 "Solutions": "/solutions",
+                "Case Studies": "/case-studies",
               };
               const href = routeMap[link] ?? `#${link.toLowerCase().replace(/\s+/g, "-")}`;
               return (
@@ -69,6 +70,7 @@ const Navbar = () => {
                 "Home": "/",
                 "About Us": "/about",
                 "Solutions": "/solutions",
+                "Case Studies": "/case-studies",
               };
               const href = routeMap[link] ?? `#${link.toLowerCase().replace(/\s+/g, "-")}`;
               return (
