@@ -1,6 +1,6 @@
 import { Landmark } from "lucide-react";
 
-const partners = ["I&M Bank", "NCBA", "Equity Bank"];
+const partners = ["Equity Bank", "I&M Bank", "NCBA"];
 
 const BankPartnersAbout = () => {
   return (
