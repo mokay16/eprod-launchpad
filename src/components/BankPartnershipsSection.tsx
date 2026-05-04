@@ -24,12 +24,12 @@ const benefits = [
 ];
 
 const partners = [
-  "KCB Bank",
-  "Equity Bank",
-  "Stanbic Bank",
-  "NCBA",
   "Cooperative Bank",
+  "Equity Bank",
   "I&M Bank",
+  "KCB Bank",
+  "NCBA",
+  "Stanbic Bank",
 ];
 
 const BankPartnershipsSection = () => {
